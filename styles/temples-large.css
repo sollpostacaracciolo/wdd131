@@ -1,0 +1,150 @@
+/* ===== Reset general ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Estilos base ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+}
+
+header, footer {
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #36454f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline double;
+  background-color: #eee;
+  color: #000;
+}
+
+.active {
+  color: yellow;
+}
+
+/* ===== Estilo título ===== */
+.title {
+  background-color: #36454f;
+  text-align: center;
+  color: #ddd;
+}
+
+/* ===== Contenedor principal ===== */
+.main {
+  background: #5aa93d;
+  grid-column: 1 / 5; 
+  height: 400px;
+}
+
+/* ===== Galería ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en PC */
+  grid-auto-rows: auto;
+  gap: 10px; /* Espacio uniforme entre imágenes */
+  padding: 30px;
+  justify-items: stretch; /* Que las celdas se estiren */
+  margin: 0 auto;
+  max-width: 500px;
+  justify-content: center;
+}
+
+figure {
+  display: flex;               /* 🔥 Usamos flexbox */
+  flex-direction: column;      /* 🔥 Coloca img arriba y caption abajo */
+  align-items: center;         /* 🔥 Centra todo en horizontal */
+  justify-content: center;     /* 🔥 Centra en vertical si hace falta */
+  text-align: center;          /* 🔥 Centra texto */
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 220px;     
+}
+
+img {
+  width: 100%;                 /* Imagen ocupa todo el ancho del figure */
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 8px; 
+}
+
+
+
+figcaption {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+/* ===== Responsive ===== */
+@media (min-width: 740px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  nav a {
+    flex: 1 1 100%;
+  }
+}
+
+/* 2 columnas en tablets */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 columna en celulares */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.nav {
+  display: block;
+}
+
+
+
+
+#hamburger {
+  display: none;
+}
