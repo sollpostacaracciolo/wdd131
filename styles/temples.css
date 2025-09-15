@@ -187,3 +187,18 @@ margin-left: auto;
 	background-color: rgb(110, 42, 165);
 	text-align: center;
 }
+
+
+ nav ul.show {
+    display: block; 
+ }
+
+
+ @media screen and (max-width: 768px) {
+  nav ul {
+    display: none; /* Oculto por defecto */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
