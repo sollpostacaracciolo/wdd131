@@ -5,7 +5,7 @@ hamburger.addEventListener('click', () => {
   if (navMenu.style.display === 'none' || navMenu.style.display === '') {
     navMenu.style.display = 'block';
   } else {
-    navMenu.style.display = 'none';
+    navMenu.style.display = 'show';
   }
 });
 
