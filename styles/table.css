@@ -1,0 +1,71 @@
+:root{
+  /* Colores parecidos a la maqueta */
+  --header-black: #000000;        /* fila de título */
+  --header-grey:  #3b3b3b;        /* fila de planes */
+  --text-light:   #ffffff;
+  --border:       #e5e7eb;
+  --zebra:        #f3f4f6;        /* filas alternas */
+  --check:        #5a5499;        /* ✓ morado */
+  --cross:        #e11d48;        /* ✗ rojo */
+}
+
+body{
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: #111;
+  margin: 24px;
+}
+
+.table-wrap{ max-width: 560px; margin: 0 auto; }
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  text-align: center;
+}
+
+/* Caption debajo */
+caption{
+  caption-side: bottom;
+  color: #6b7280;
+  padding: 8px 0 0;
+  font-size: .9rem;
+}
+
+/* Título principal (negro) */
+thead .brand{
+  background: var(--header-black);
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: .8rem;
+  text-align: center;
+}
+
+/* Fila de planes (gris) */
+thead .plans th{
+  background: var(--header-grey);
+  color: var(--text-light);
+  padding: .6rem .75rem;
+  font-weight: 700;
+}
+
+/* Celdas y bordes */
+th, td{
+  border: 1px solid var(--border);
+  padding: .6rem .75rem;
+}
+
+tbody th{
+  text-align: left;   /* columna de características alineada a la izquierda */
+  font-weight: 600;
+}
+
+/* Rayas de cebra */
+tbody tr:nth-child(even){
+  background: var(--zebra);
+}
+
+/* ✓ y ✗ coloreados */
+.yes{ color: var(--check); font-weight: 700; }
+.no { color: var(--cross); font-weight: 700; }
