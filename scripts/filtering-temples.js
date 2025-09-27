@@ -150,3 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     copyrightYearElement.textContent = currentYear;
     lastModifiedElement.textContent = `Last update: ${lastModified}`;
 });
+
+
+const grid = document.querySelector(".container.home");
+applyFilter("home"); // para render inicial
