@@ -5,22 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const aboutMyselfContent = `
             <h2>Transitioning to Software Development</h2>
             <p>
-                With a solid background in managing complex digital operations and customer service systems, I am
-                eager to transition into software development.
+               I started my professional path as a <strong>freelancer</strong>, working on creative digital projects that combined design, organization, and technology.
             </p> 
             <p>
-                My experience at Bancolombia Panamá S.A. involved
-                overseeing digital operations, resolving escalated client queries, and ensuring high-quality
-                standards, all of which honed my problem-solving and technical skills.
+             I completed a <strong>Web Design course at UTN (National Technological University, Argentina)</strong>, where I learned structure, layout, and visual balance for modern web interfaces.
             </p>     
             <p>
-                At BAC International Bank, I managed Oracle's Siebel CRM and IBM AS/400 systems, providing solutions across multiple channels and
-                maintaining organized information systems. 
+                 I also studied <strong>Fashion Design at a private institute</strong>, which helped me develop creativity, color sense, and aesthetic vision — skills that now enhance my software projects.
             </p>
             <p>    
-                These roles have equipped me with a keen attention to
-                detail, operational management expertise, and a strong foundation in IT systems, positioning me well
-                for a career in software development.
+                 I am currently studying <strong>Software Development at Brigham Young University–Idaho</strong>, focusing on JavaScript, C#, and MySQL to create functional and elegant web applications.
             </p>
         `;
         aboutMyself.innerHTML = aboutMyselfContent;
@@ -31,22 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const educationContent = `
             <h2>Education</h2>
             <p>
-                Currently pursuing a B.S. in Software Development at Brigham Young University - Idaho, I am gaining
-                comprehensive skills in software engineering with a strong emphasis on web development. 
+                I’m Maria Sol Caracciolo, a creative and curious freelancer who turned a love for design and problem-solving into a path in software development.
+Through freelance projects, I’ve learned how to mix creativity, organization, and technology to bring ideas to life.
+I enjoy turning small ideas into real projects that connect people and make digital experiences simple and beautiful.
             </p>
             <p>
                 My education
-                has equipped me with proficiency in JavaScript, C#, GitHub, and MySQL, among other technologies
-                essential for a career in software development. 
+                Software Development – Brigham Young University–Idaho
+Learning JavaScript, C#, MySQL, and web development fundamentals.
+
+Web Design Course – UTN, Argentina
+Strengthened my sense of structure, color, and visual harmony in digital projects.
+
+Fashion Design – Private Institute
+Explored creativity and aesthetic composition, skills that now enhance my work as a developer.
             </p>
             <p>    
-                Additionally, I have earned certificates in computer
-                programming and computer support, which further enhance my technical expertise. 
+                My goal is to grow as a software developer who builds projects with meaning and creativity.
+I want to keep learning, exploring new technologies, and creating websites that are both useful and inspiring.
             </p>
-            <p>
-                I am also studying for a Bachelor in English at Universidad de Panamá, enriching my communication 
-                skills and broadening my educational background.
-            </p>
+           
         `;
         education.innerHTML = educationContent;
     }
